@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mapeia Ser-Tão</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              mapeia: {
+                green: '#4B6043', // Verde Mandacaru (Vegetação seca/Oliva)
+                red: '#B05D46',   // Terra Vermelha/Barro (Terracota)
+                yellow: '#F0A500',// Mel/Âmbar (Apicultura - Destaque vibrante)
+                bg: '#FDFBF7',    // Creme de Leite (Laticínios - Fundo suave)
+                text: '#4A3B32',  // Terra Escura/Café (Texto legível)
+              },
+              sertao: {
+                sand: '#FAEBD7',  // Areia/Doce de Leite claro (Secundário)
+                earth: '#B05D46', // Matches mapeia-red
+                green: '#4B6043', // Matches mapeia-green
+                sun: '#F0A500',   // Matches mapeia-yellow
+                dark: '#4A3B32',  // Matches mapeia-text
+              }
+            },
+            fontFamily: {
+              sans: ['Roboto', 'sans-serif'],
+              display: ['Montserrat', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #FDFBF7;
+        color: #4A3B32;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.561.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
